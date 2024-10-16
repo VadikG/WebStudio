@@ -424,14 +424,22 @@ button {
   background-color: #f5f4fa;
 }
 .comand-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1600px) {
+  .comand-title {
+    /**desctop device**/
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
 .comand-list {
   display: flex;
   align-items: center;
@@ -439,6 +447,7 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .comand-item {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -446,6 +455,19 @@ button {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 786px) {
+  .comand-item {
+    /**tablet device**/
+    width: ((100% - 1 * 30px) / 2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .comand-item {
+    /**desctop device**/
+    width: ((100% - 3 * 30px) / 4);
+  }
+}
+
 .comand-img {
   margin-bottom: 30px;
 }
@@ -504,36 +526,44 @@ button {
 .container {
 }
 .customers-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1600px) {
+  .customers-title {
+    /**desctop device**/
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
 .customers-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .customers-item {
-  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+  width: calc((100% - 1 * 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .customers-item {
     /**tablet device**/
-    width: 226px;
+    width: calc((100% - 2 * 30px) / 3);
   }
 }
 
 @media screen and (min-width: 1600px) {
   .customers-item {
     /**desctop device**/
-    width: 170px;
+    width: calc((100% - 5 * 30px) / 6);
   }
 }
 .customers-link {
