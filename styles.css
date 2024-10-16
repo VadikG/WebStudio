@@ -280,12 +280,16 @@ button {
 }
 
 /*Advantages*/
-.advantages {
+
+@media screen and (min-width: 1600px) {
+  .advantages {
+    /**desctop device**/
+    padding-bottom: 0;
+  }
 }
 
 .advantages-list {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
@@ -317,7 +321,8 @@ button {
   border-radius: 4px;
   background-color: #f5f4fa;
   **/
-
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
