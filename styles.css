@@ -291,20 +291,20 @@ button {
   gap: 30px;
 }
 .advantages-item {
-  width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 786px) {
   .advantages-item {
     /**tablet device**/
-    width: calc((100% - 1 * 30px) / 2);
+    max-width: calc((100% - 1 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1600px) {
   .advantages-item {
     /**desctop device**/
-    width: calc((100% - 3 * 30px) / 4);
+    max-width: calc((100% - 3 * 30px) / 4);
   }
 }
 .advantages-svg-container {
