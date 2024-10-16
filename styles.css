@@ -285,24 +285,26 @@ button {
 
 .advantages-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 .advantages-item {
-  max-width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 786px) {
   .advantages-item {
     /**tablet device**/
-    max-width: 354px;
+    width: calc((100% - 1 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1600px) {
   .advantages-item {
     /**desctop device**/
-    max-width: 270px;
+    width: calc((100% - 3 * 30px) / 4);
   }
 }
 .advantages-svg-container {
@@ -318,11 +320,9 @@ button {
   background-color: #f5f4fa;
   padding: 25px 190px;
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 786px) {
   .advantages-svg-container {
     /**tablet device**/
-
     padding: 25px 142px;
   }
 }
@@ -330,7 +330,6 @@ button {
 @media screen and (min-width: 1600px) {
   .advantages-svg-container {
     /**desctop device**/
-
     padding: 25px 100px;
   }
 }
