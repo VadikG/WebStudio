@@ -140,9 +140,11 @@ button {
 }
 .header-list {
   display: flex;
+  /**
   gap: 50px;
+  **/
 }
-@media only screen and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .header-list {
     display: none;
   }
