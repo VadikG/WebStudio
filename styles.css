@@ -27,6 +27,7 @@ body {
   margin-right: auto;
   **/
   /**mobile device**/
+  min-width: 320px;
   max-width: 480px;
   padding: 0px 15px 0px 15px;
   margin-left: auto;
@@ -310,6 +311,7 @@ button {
   .advantages-item {
     /**desctop device**/
     max-width: calc((100% - 3 * 30px) / 4);
+    text-align: start;
   }
 }
 .advantages-svg-container {
@@ -324,7 +326,7 @@ button {
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
-  padding: 25px 190px;
+  padding: 25px 0;
 }
 @media screen and (min-width: 786px) {
   .advantages-svg-container {
@@ -346,6 +348,12 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1600px) {
+  .advantages-subtitle {
+    /**desctop device**/
+    text-align: start;
+  }
 }
 
 .advantages-text {
