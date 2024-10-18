@@ -56,7 +56,8 @@
           </li>
         </ul>
       </div>
-      <button class="menu-btn" type="button">
+      <!--Burger menu-->
+      <button class="menu-btn" type="button" aria-label="open menu button">
         <svg class="menu-btn-svg" width="40" height="40">
           <use href="./images/icons.svg#icon-burger-menu"></use>
         </svg>
@@ -481,7 +482,55 @@
       </form>
     </div>
   </div>
-
+  <!--MOBILE MENU-->
+  <div class="mobile-menu hide">
+    <button class="mobile-btn" type="button">
+      <svg class="mobile-btn-svg" width="18" height="18">
+        <use href="./images/icons.svg#icon-vector" width="18" height="18"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="./index.html">Студія</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="./portfolio.html">Портфоліо</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Контакти</a>
+      </li>
+    </ul>
+    <ul class="mobile-adress-list">
+      <li class="mobile-menu-item">
+        <a class="mobile-adress-link" href="mailto:info@devstudio.com">info@devstudio.com
+          <svg class="svg-contact" width="16" height="12">
+            <use href="./images/icons.svg#icon-mail"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-adress-link" href="tel:+380961111111">+38 096 111 11 11
+          <svg class="svg-contact" width="12" height="16">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="mobile-menu-socials">
+      <li class="mobile-socials-item">
+        <a class="mobile-socials-link" href="">Instagram</a>
+      </li>
+      <li class="mobile-socials-item">
+        <a class="mobile-socials-link" href="">Twitter</a>
+      </li>
+      <li class="mobile-socials-item">
+        <a class="mobile-socials-link" href="">Facebook</a>
+      </li>
+      <li class="mobile-socials-item">
+        <a class="mobile-socials-link" href="">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
 </body>
 
 </html>

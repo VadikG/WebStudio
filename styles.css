@@ -1132,3 +1132,52 @@ button {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+
+/** Mobile menu**/
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /** tablet device**/
+  .menu-btn {
+    display: none;
+  }
+}
+.menu-btn-svg {
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 48px 48px 40px;
+}
+.mobile-btn {
+}
+.mobile-btn-svg {
+}
+.mobile-menu-list {
+}
+.mobile-menu-item {
+}
+.mobile-menu-link {
+}
+.mobile-adress-list {
+}
+.mobile-adress-link {
+}
+.svg-contact {
+}
+.mobile-menu-socials {
+}
+.mobile-socials-item {
+}
+.mobile-socials-link {
+}
