@@ -1181,7 +1181,7 @@ button {
   background: none;
 }
 .mobile-btn-svg {
-  fill: currentColor;
+  fill: #212121;
   transition: fill 250ms;
 }
 .mobile-btn:focus .mobile-btn-svg {
