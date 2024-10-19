@@ -1160,6 +1160,7 @@ button {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  z-index: 999;
   background-color: #fff;
   padding: 48px 83px 48px 40px;
   background: #fff;
@@ -1201,7 +1202,6 @@ button {
   color: #2196f3;
 }
 .mobile-adress-list {
-  white-space: nowrap;
   margin-bottom: 64px;
 }
 .mobile-adress-item:not(:last-child) {
@@ -1218,6 +1218,11 @@ button {
   font-size: 34px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  font-size: clamp(
+    16px,
+    5vw,
+    34px
+  ); /* Мінімум 16px, максимум 34px, а середній розмір залежить від ширини вікна */
 }
 
 .mobile-menu-socials {
