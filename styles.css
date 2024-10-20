@@ -1109,9 +1109,18 @@ button {
 }
 /*PORTFOLIO*/
 /*Section Works*/
+
 .works {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  .works {
+    /**desctop device**/
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 /*works-nav*/
 .works-nav {
@@ -1119,8 +1128,15 @@ button {
 }
 .navigation-list {
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    /**tablet device**/
+    justify-content: center;
+  }
 }
 .navigation-item {
 }
@@ -1157,10 +1173,26 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
-.works-item {
-  width: calc((100% - 2 * 30px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 767.98px) {
+  /**mobile device**/
+  .works-item {
+    width: 100%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+@media screen and (min-width: 768px) {
+  /**tablet device**/
+  .works-item {
+    width: calc((100% - 1 * 30px) / 2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .works-item {
+    /**desctop device**/
+    width: calc((100% - 2 * 30px) / 3);
+  }
+}
+
 .works-item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -1171,6 +1203,12 @@ button {
 }
 .works-img {
   display: block;
+}
+@media only screen and (max-width: 767.98px) {
+  /**mobile device**/
+  .works-img {
+    width: 100%;
+  }
 }
 
 .works-owerlay {
