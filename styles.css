@@ -267,70 +267,55 @@ button {
 
 /*Hero*/
 .hero {
-  /**
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 200px 0;
-  background-color: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(./images/hero/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  **/
-
   /**mobile device**/
-  min-width: 375px;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 118px 0;
   background-color: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(./images/hero/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1599.98px) {
   .hero {
-    /**tablet device**/
-    max-width: 768px;
+    padding: 116px 0;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .hero {
-    /**desctop device**/
-    max-width: 100%;
     padding: 200px 0;
   }
 }
-.hero .container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+
+.hero-bg {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./images/hero/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 .hero-title {
   color: white;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.36;
   letter-spacing: 0.06em;
   max-width: 696px;
   text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1600px) {
+  /**mobile device**/
+  .hero-title {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }
 .hero-btn {
+  display: block;
+  margin: 0 auto;
   background-color: #2196f3;
   color: white;
   font-weight: 700;
@@ -363,22 +348,22 @@ button {
   gap: 30px;
 }
 .advantages-item {
-  max-width: calc(100% - 6.5%);
+  width: 100%;
 
   text-align: center;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   .advantages-item {
     /**tablet device**/
-    max-width: calc((100% - 1 * 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1600px) {
   .advantages-item {
     /**desctop device**/
-    max-width: calc((100% - 3 * 30px) / 4);
+    width: calc((100% - 3 * 30px) / 4);
     text-align: start;
   }
 }
