@@ -121,29 +121,56 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  gap: 93px;
+@media screen and (min-width: 768px) {
+  .header-nav {
+    /**tablet device**/
+    display: flex;
+    align-items: center;
+    gap: 88px;
+  }
 }
+@media screen and (min-width: 1600px) {
+  .header-nav {
+    /**desctop device**/
+    gap: 93px;
+  }
+}
+
 .header-logo {
   color: #2196f3;
-  font-size: 26px;
+  font-size: 24px;
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.03em;
   padding: 16px 0;
 }
+
+@media screen and (min-width: 1600px) {
+  .header-logo {
+    /**desctop device**/
+    font-size: 26px;
+  }
+}
 .header-logo-span {
   color: black;
 }
-.header-list {
-  display: flex;
-  /**
-  gap: 50px;
-  **/
+
+@media screen and (max-width: 767.98px) {
+  /**mobile device**/
+  .header-list,
+  .header-adress-list {
+    display: none;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  /**tablet device**/
+  .header-list {
+    display: flex;
+    gap: 50px;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   .header-list {
     display: none;
@@ -159,6 +186,12 @@ button {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  /**tablet device**/
+  .header-link {
+    padding: 32px 0;
+  }
+}
 .header-link:hover,
 .header-link:focus {
   color: #2196f3;
@@ -166,30 +199,56 @@ button {
 .header-link.active {
   color: #2196f3;
 }
-
-.header-link.active::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
+@media screen and (min-width: 768px) {
+  /**tablet device**/
+  .header-link.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+  }
 }
+
 .header-adress {
+}
+@media screen and (min-width: 768px) {
+  /**tablet device**/
+  .header-adress-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /**desctop device**/
+  .header-adress-list {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+  }
 }
 .header-adress-link {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   color: #757575;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  padding: 32px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1600px) {
+  /**desctop device**/
+  .header-adress-link {
+    gap: 10px;
+    padding: 32px 0;
+  }
 }
 
 .svg-contact {
@@ -594,12 +653,12 @@ button {
 /*Footer*/
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 .footer .container {
   /**mobile device**/
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -623,12 +682,18 @@ button {
 .footer-logo {
   display: inline-block;
   color: #2196f3;
-  font-size: 26px;
+  font-size: 24px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.03em;
   margin-bottom: 28px;
+}
+@media screen and (min-width: 1600px) {
+  .footer-logo {
+    /**desctop device**/
+    font-size: 26px;
+  }
 }
 
 .footer-span {
@@ -639,7 +704,7 @@ button {
   flex-direction: column;
   align-items: center;
   max-width: 232px;
-  white-space: nowrap;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1600px) {
   .footer-adress {
@@ -747,7 +812,6 @@ button {
 .footer-form-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 12px;
 }
 @media screen and (min-width: 1600px) {
@@ -760,8 +824,8 @@ button {
 }
 
 .footer-input {
-  width: 450px;
-  height: 50px;
+  width: 100%;
+  min-height: 50px;
   color: #fff;
   font-size: 16px;
   line-height: 1.25;
@@ -777,7 +841,6 @@ button {
 @media screen and (min-width: 1600px) {
   .footer-input {
     /**desctop device**/
-    width: 358px;
   }
 }
 
@@ -801,8 +864,10 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
+  padding: 10px 28px 10px 31px;
+  margin: 0 auto;
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -817,7 +882,7 @@ button {
 .footer-form-svg {
   fill: #fff;
 }
-/*Modal Wondow*/
+/*Modal Window*/
 .backdrop {
   display: flex;
   justify-content: center;
